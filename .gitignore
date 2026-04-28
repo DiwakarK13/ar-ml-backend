@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment (must ignore)
+venv/
+.env/
+
+# Ignore everything inside runs
+runs/*
+
+# Re-include ONLY your trained model path
+!runs/detect/
+!runs/detect/train-2/
+!runs/detect/train-2/weights/
+!runs/detect/train-2/weights/best.pt
+
+# Dataset (optional but recommended)
+dataset/
+train/
+valid/
+
+# Logs
+*.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
